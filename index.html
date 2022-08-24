@@ -5,17 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Invertido</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="light-theme" aria-label="O site está usando o tema claro" role="body">
   <header aria-label="Cabeçalho da página">
     <audio id="music" autoplay>
-      <source src="/assets/musics/normal-world.mpeg" />
+      <source src="assets/musics/normal-world.mpeg" />
       Este navegador não aceita áudio.
     </audio>
 
     <div class="header-content">
-      <img src="/assets/images/banner/logo.svg" alt="Imagem principal" class="invert-element" />
+      <img src="assets/images/banner/logo.svg" alt="Imagem principal" class="invert-element" />
       <p class="invert-element" role="text">
         Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido!
       </p>
@@ -36,7 +36,7 @@
         </p>
       </div>
       <img 
-        src="/assets/images/content/inverted-world.png"
+        src="assets/images/content/inverted-world.png"
         alt="imagem ilustrativa do Mundo Invertido" 
         class="invert-element" 
       />
@@ -67,13 +67,13 @@
         <h2>A segunda série mais assistida da Netflix</h2>
         <ul class="gallery-container" role="gallery">
           <li class="gallery-image invert-element">
-            <img src="/assets/images/content/serie-image-01.png" alt="Imagem de Vecna" />
+            <img src="assets/images/content/serie-image-01.png" alt="Imagem de Vecna" />
           </li>
           <li class="gallery-image invert-element">
-            <img src="/assets/images/content/serie-image-02.png" alt="Imagem ilustrativa dos amigos de Eleven">
+            <img src="assets/images/content/serie-image-02.png" alt="Imagem ilustrativa dos amigos de Eleven">
           </li>
           <li class="gallery-image invert-element">
-            <img src="/assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada">
+            <img src="assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada">
           </li>
         </ul>
       </div>
@@ -130,7 +130,7 @@
       const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg';
 
       const audio = document.getElementById('music');
-      audio.src = `/assets/musics/${music}`;
+      audio.src = `assets/musics/${music}`;
       audio.play();
       audio.volume = 0.2;
     }
